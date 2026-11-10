@@ -20,14 +20,7 @@ Without Docker, the build needs CMake ≥ 3.18, Ninja and a C++17 compiler with 
 
 ## Documentation
 
-| Page | Contents |
-|---|---|
-| [1. Overview](docs/01-overview.md) | Problem, operating model, the two techniques, common terms |
-| [2. Base index](docs/02-base-index.md) | The Vamana index that both techniques modify |
-| [3. Incremental modification](docs/03-incremental-modification.md) | Technique for data changes |
-| [4. Workload-adaptive modification](docs/04-workload-adaptive-modification.md) | Technique for query changes |
-| [5. Evaluation](docs/05-evaluation.md) | Datasets, protocol, results, reproduction |
-| [6. Reference](docs/06-reference.md) | Programs, scripts, file formats, C++ API |
+The [wiki](https://github.com/hyojeongyunn/incgraph/wiki) describes the techniques, the evaluation and the programs.
 
 ## Repository layout
 
@@ -38,7 +31,6 @@ src/apps/               command-line programs
 src/tests/              tests
 scripts/                build, experiment and plotting scripts
 data/download.sh        download of the public datasets
-docs/                   documentation
 ```
 
 ## Acknowledgement
