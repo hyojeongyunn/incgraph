@@ -1,0 +1,14 @@
+services:
+  dev:
+    build:
+      context: .
+      args:
+        UID: ${UID:-1000}
+        GID: ${GID:-1000}
+    image: incgraph:latest
+    volumes:
+      - ./:/workspace
+    working_dir: /workspace
+    init: true
+    shm_size: "16gb"
+    command: sleep infinity
